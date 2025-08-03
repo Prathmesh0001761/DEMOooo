@@ -1,6 +1,8 @@
 import sys
+from dbhelper import DBhelper
 class Flipkart:
     def __init__(self):
+        self.db = DBhelper()
         self.menu()
 
     def menu(self):
@@ -18,4 +20,4 @@ class Flipkart:
         else:
             sys.exit(1000)
             
-    def register(self):
+    # def register(self):
